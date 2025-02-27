@@ -52,7 +52,6 @@ class ChecklistData {
   }
 }
 
-
 class Checklist {
   final int id;
   final String title;
@@ -88,7 +87,6 @@ class Checklist {
     );
   }
 
-
   factory Checklist.fromJson(Map<String, dynamic> json) {
     return Checklist(
       id: json['id'],
@@ -96,7 +94,7 @@ class Checklist {
       done: json['done'],
       createdAt: DateTime.parse(json['created_at']),
       updatedAt: DateTime.parse(json['updated_at']),
-      items: List<Item>.from(json['items']),
+      items: (json['items'] as List).map((item) => Item.fromJson(item)).toList(),
     );
   }
 

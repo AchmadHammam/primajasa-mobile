@@ -22,7 +22,7 @@ Future<void> fetchListCheckList(
   PagingController<int, Checklist> pagingController,
   int page,
 ) async {
-  try {
+  // try {
     int pageSize = 6;
     SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
     var token = sharedPreferences.get('token');
@@ -44,11 +44,12 @@ Future<void> fetchListCheckList(
     } else {
       throw Exception([res.statusCode, res.body]);
     }
-  } catch (e) {
-    pagingController.error = e;
-    throw Exception(e);
-  }
-}
+  } 
+  // catch (e) {
+  //   pagingController.error = e;
+  //   throw Exception(e);
+  // }
+// }
 
 Future<int> updateCheckList(int id) async {
   SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
