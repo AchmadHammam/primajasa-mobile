@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "659778050561",
+    "project_id": "hidayah-8007a",
+    "storage_bucket": "hidayah-8007a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659778050561:android:3f2915eec6e240030abe00",
+        "android_client_info": {
+          "package_name": "com.primajasa.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659778050561-7ri6qvmcr457if9d0fg3uuc8k8o7iomk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBekM9w--Xyz9xZsVPCXBX102LOOQjemTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659778050561-7ri6qvmcr457if9d0fg3uuc8k8o7iomk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
